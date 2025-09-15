@@ -1,9 +1,10 @@
 from fastapi import FastAPI
 
-app = FastAPI(title="Hello Weather API")
+# Serve Swagger UI at the root path
+app = FastAPI(title="Hello Weather API", docs_url="/", redoc_url=None)
 
 
-@app.get("/", summary="Health check")
+@app.get("/health", summary="Health check")
 def read_root():
     return {"status": "ok"}
 
@@ -11,4 +12,3 @@ def read_root():
 @app.get("/weather", summary="Hello world weather endpoint")
 def read_weather():
     return {"message": "Hello, world"}
-
