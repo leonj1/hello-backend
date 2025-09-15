@@ -10,5 +10,6 @@ Run locally:
 
 Endpoints:
 
-- `GET /` – health check `{ "status": "ok" }`
+- `GET /health` – health check `{ "status": "ok" }`
+- `GET /` – Swagger UI
 - `GET /weather` – hello world for weather
