@@ -1,0 +1,32 @@
+# VCS
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+
+# Envs
+.env
+.venv
+venv/
+
+# Build / cache
+build/
+dist/
+.cache/
+.mypy_cache/
+.pytest_cache/
+.coverage
+.coverage.*
+*.log
+
+# OS
+.DS_Store
+
